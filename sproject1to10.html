@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Learning Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" href="flower.jpg">
+    <title>SEMANTIC HTML PROJECTS</title>
+</head>
+<body>
+    <header>Semantic BLOG layout</header>
+    <nav>
+        <a href="home">HOME</a>|
+        <a href="services">OUR SERVICES</a>|
+        <a href="contact">CONTACT US</a>
+    </nav>
+    <article>
+        <h1>This is our services page.</h1>
+        <h2 id="home">HOME</h2>
+        <P>This is the home section</P>
+        <h2 id="services">OUR SERVICES</h2>
+        <P>Here we provide web page development services.</P>
+        <h2 id="contact"> CONTACT US</h2>
+        <P>Feel free to contact us.</P>
+    </article>
+    <aside>
+        <h3>related links for blogs</h3>
+        <a href="https://www.chitkara.edu.in/blogs/wp-content/uploads/2023/09/Blogging-in-Digital-Marketing.jpg"> Links</a>
+        <a href="https://youtu.be/w5ocpQL4Moo?si=5yjOoSw5uA6mc8nj">video link</a>
+    </aside>
+    <footer>
+        <p>&copy; Blog post</p>
+    </footer><hr>
+    <h2>TO-DO LIST</h2>
+    <LABEL>Today to-do work </LABEL>
+    <select>
+        <option>Attend the classes</option>
+        <option>Finish the bending work</option>
+        <option>Revise HTML</option>
+        <option>Submit projects</option>
+    </select><br>
+    <button type="submit">SUBMIT</button>
+    <button type="submit">CLEAR ALL</button>
+    <hr>
+<h1>Canvas Drawing</h1>
+
+<canvas id="myCanvas"
+width="400"
+height="200">
+</canvas>
+<script>
+    const ctx = document.getElementById("myCanvas").getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 150, 80);
+    </script>
+    <hr>
+<h1>SURVEY FORM</h1>
+<form>
+<label>NAME:</label>
+<input type="text" required aria-label="Enter your name"><br>
+<label>AGE:</label>
+<input type="number" required aria-label="Enter Your Age"><br>
+<label>CHOOSE YOUR FAVOURIT COLOR:</label>
+<input type="color" required aria-label="enter your fav color"><br>
+<button type="submit">SUBMIT</button>
+</form>
+<hr>
+<h1>SVG Icons</h1>
+<svg width="100" height="100">
+<polygon points="50,10 61,40 95,40 67,60 78,90 50,70 22,90 33,60 5,40 39,40"
+fill="gold"/>
+</svg>
+<svg width="100" height="100">
+<circle cx="50" cy="50" r="35" fill="red"/>
+</svg>
+<svg width="100" height="100">
+<rect x="25" y="20" width="50" height="60" fill="gray"/>
+<line x1="35" y1="30" x2="65" y2="70" stroke="white" stroke-width="3"/>
+<line x1="65" y1="30" x2="35" y2="70" stroke="white" stroke-width="3"/>
+</svg>
+<HR>
+    <H1>EMBEDDING YOUTUBE VIDEO</H1>
+    <figure>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tfzGsCxutWk?si=NX6UnIJvFNfXi3pu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <figcaption>Beginner css video</figcaption>
+    </figure>
+    <hr>
+<h1>Advanced Filter Form</h1>
+<form>
+<label>Select Date:</label><br>
+<input type="date" required><br>
+<label>Price Range:</label><br>
+<input type="range" min="0" max="100"><br>
+<label>Choose City:</label><br>
+<input list="cities" required>
+<datalist id="cities">
+<option value="Chennai">
+<option value="Madurai">
+<option value="Coimbatore">
+<option value="Trichy">
+<option value="Salem">
+</datalist>
+<br>
+<input type="submit" value="Submit">
+</FORM>
+</body>
+</html>

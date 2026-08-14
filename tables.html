@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+</head>
+<body>
+    <H2>STUDENT MARKSHEET</H2>
+    <table border="2">
+        <tr>
+            <th>NAME</th>
+            <th>SUBJECT</th>
+            <th>SCORE</th>
+        </tr>
+        <tr>
+            <td>ANUSHA LAKSHMI</td>
+            <td>python</td>
+            <td>100</td>
+        </tr>
+        <TR>
+            <TD>LAKSHMI</TD>
+            <TD>HTML</TD>
+            <TD>70</TD>
+        </TR>
+        </table>
+        <H1> ROWSPAN AND COLSPAN </H1>
+        <table border="3">
+        <th colspan="6">TIME TABLE</th>
+        <tr>
+            <td>MONDAY</td>
+            <td>maths</td>
+            <td>tamil</td>
+            <td rowspan="2">LUNCH BREAK</td>
+            <td>pt</td>
+            <td>english</td>
+            </tr>
+        <tr>
+            <td>TUESDAY</td>
+            <td>science</td>
+            <td>tamil</td>
+            <td>evs</td>
+            <td>social</td>
+        </tr>
+    </table><br><br>
+    <H1>FORMS</H1>
+    <label for="name">ENTER YOUR NAME</label>
+        <input type="text" id="name" name="name" required><BR><br>
+        <label for="email">ENTER YOUR EMAIL</label>
+        <input type="text" id="email" name="email" placeholder="enter your mail id" required><br><br>
+        <label for="password">ENTER YOUR PASSWORD</label>
+        <input type="password" id="password" name="password" maxlength="8" required><br><br>
+        <button type="submit">SUBMIT</button>
+    </form><br><br>
+    <h1>OTHER ELEMENTS</h1>
+    <form>
+            <h2>SIMPLE POLL SYSTEM</h2>
+            <label>What is your ambition</label><br>
+            <input type="radio" name="ambition">DOCTOR<br>
+            <input type="radio" name="ambition">TEACHER<br>
+            <input type="radio" name="ambition">POLICE<br>
+            <button type="submit">THANK YOU</button>
+        </form><hr>
+        <form><h1>DROPDOWN COUNTRY</h1>
+        <label>CHOOSE YOUR COUNTRY</label><BR>
+        <select>
+            <option>INDIA</option><BR>
+            <option>USA</option><BR>
+            <option>UK</option><BR>
+            <option>UAE</option>
+        </select><br>
+        <button type="submit">THANK YOU FOR CHOOSING</button>
+        </form><hr>
+        <FORM><h1>COMMENT SECTION</h1><BR>
+            <label>Comment your opinion</label>
+            <textarea rows="10" cols="100"></textarea><BR>
+            <p>Maximum 300 character allowed</p><br>
+            <button type="submit">SUBMIT</button><hr>
+         </FORM><hr>
+        <form>
+            <h1> AUTOCOMPLETE FIELDS</h1>
+            <label>BROWSERS</label><BR>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="chrome"></option>
+                <option value="FIREFOX"></option>
+                <option value="opera"></option>
+                <option value="safari"></option>
+                <option value="edge"></option>
+            </datalist>
+         </form>
+         <form>
+            <h1>PROFILE</h1>
+            <fieldset> 
+            <legend>PERSONAL DETAILS</legend>
+        <label>NAME</label>
+        <input type="text"><br><br>
+        <label>EMAIL</label>
+        <input type="text">
+        </fieldset><br>
+        <fieldset>
+            <legend>ADDRESS DETAILS</legend>
+            <label>DOOR NUMBER</label>
+            <input type="number"><br>
+            <label>STREET NAME</label>
+            <input type="text"><br>
+        </fieldset><br>
+        <input type="submit" value="SUBMIT">
+         </form>
+    </body>
+</html>

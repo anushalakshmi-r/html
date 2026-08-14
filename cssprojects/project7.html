@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 30px;
+            height: 100vh;
+            width: 100%;
+        }
+        .gallery h1{
+            font-size: 2rem;
+        }
+        .gallery img{
+            width:90%;
+            height:150px;
+            object-fit:cover;
+            border-radius:10px;
+            transition:0.4s;
+            cursor:pointer;
+        }
+        .gallery img:hover{
+            transform:scale(1.08);
+            filter:grayscale(50%);
+            font-style: oblique;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery">
+    <h1>FLOWER IMAGE GALLERY</h1><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXcv4OvjD8eyTxCmVslZ09kAX8gHXUloKnxzM_Orwmw2i2jQ_qaW9x_Lc&s=10" alt="Flower" height="150" width="150">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz0SaVOlkFjLv5ky0pWTq02xZKfkUovkq4XMmRUPIf8aYEBh4_sJ3e0G4I&s=10" alt="flower" height="150" width="150">
+    <img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.webp?b=1&s=612x612&w=0&k=20&c=o3n-h2j4aBnaDqKeY-876cTRm1DLOsZcCjcfDZf_9TQ=" alt="Flower" width="150" height="150">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKagCP1onEQTUOqy2jGaNKAexDGECqrawEevxSpT6YseNQoN8Ha7cC79A&s=10" alt="Flower" height="150" width="150">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmngjGqFQM0OcZO-nzt_UUaUl8Qt7l867G0JHzh7qIcD8cF9G0HA-671X5&s=10" alt="Flower" height="150" width="150">
+    <img src="https://media.istockphoto.com/id/511112100/photo/tulips.jpg?s=612x612&w=0&k=20&c=BIdlCAFoXLqYIIeFpJJ8Pmbw6_68vOPGEfLr8tInMhM=" alt="Flower" width="150" height="150">
+   </div><br><br><hr>
+</body>
+</html>

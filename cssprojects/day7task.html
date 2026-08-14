@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 tasks</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            display: flex;
+            gap: 25px;
+            background-color: rgb(77, 236, 77);
+        }
+        .box{
+            width: 100px;
+            border: 2px ridge grey;
+            background-color: aquamarine;
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 5px solid royalblue;
+            background-color: lightgreen;
+        }
+        .boxx{
+            width: 100px;
+            border: 2px ridge grey;
+            background-color: aquamarine;
+        }
+        .container11{
+            background-color: chocolate;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            height: 30px;
+            gap: 25px;
+        }
+        .boxx1{
+            border: 2px solid black;
+            background-color: beige;
+            padding: 5px;
+        }
+        .container12{
+            border: 5px ridge black;
+            display: flex;
+            justify-content: flex-end;
+            background-color: brown;
+            gap: 25px;
+        }
+        .box1{
+            background-color: lightcoral;
+            border: 2px solid black;
+        }
+        .contain12{
+            background-color: lightblue;
+            border: 5px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box12{
+            background-color: rgb(69, 151, 189);
+            border: 2px solid black;
+        }
+        .container123{
+            background-color: lightsalmon;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        nav{
+            border: 5px solid black;
+            height: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .contain121{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 5px solid black;
+            background-color: cornsilk;
+            gap: 15px;
+        }
+        .box123{
+            background-color: rgb(247, 171, 57);
+            border: 2px solid black;
+            
+        }
+        .contain11{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            height: 200px;
+            background-color: khaki;
+            gap: 25px;
+        }
+        .box13{
+            border: 2px solid;
+            height: 15px;
+        }
+        .contain123{
+            height: 100vh;
+            border: 5px solid black;
+            background-color: lightsteelblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containe{
+            background-color: cyan;
+            border: 5px double ;
+            display: flex;
+            gap: 35px;
+        }
+        .contain{
+            display: flex;
+            flex-wrap: wrap;
+            border: 5px solid black;
+            gap: 25px;
+        }
+        .ox{
+            flex: 1 1 200px;
+            min-height: 100px;
+            background-color: darkturquoise;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            background-color: hotpink;
+            margin: 15px;
+            padding: 25px;
+        }
+        .contain1{
+            background-color: cadetblue;
+            display: flex;
+            gap: 25px;
+        }
+        .ox1{
+            border: 2px solid;
+            flex-grow: 1;
+        }
+        .contain13{
+            background-color: aquamarine;
+            display: flex;
+            gap: 25px;
+        }
+        .box11{
+            border: 2px solid;
+            flex-shrink: 0;
+        }
+        .contain134{
+            display: flex;
+            background-color: rgb(240, 223, 75);
+            border: 2px solid black;
+            gap: 25px;
+        }
+        .box2{
+            background-color: yellow;
+            border: 2px solid;
+            flex-basis: 200px;
+        }
+        .con134{
+            background-color: lightgray;
+            border: 5px solid;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .abox2{
+            border: 2px solid;
+            flex: 1 0 150px;
+        }
+        .order{
+            background-color: lightgreen;
+            border: 2px solid black;
+            display: flex;
+            gap: 25px;
+            padding: 10px;
+        }
+        .item{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            font-size: 20px;
+            border: 1px solid;
+        }
+        .item1{
+            order: 4;
+        }
+        .item2{
+            order: 1;
+        }
+        .item3{
+            order: 2;
+        }
+        .item4{
+            order: 3;
+        }
+        .order1{
+            border: 3px solid black;
+            background-color: rgb(24, 255, 24);
+            display: flex;
+            flex-direction: column;
+        }
+        .itemss{
+            align-self: flex-end;
+        }
+        .con1234{
+            border: 5px solid black;
+            background-color: lightpink;
+            display: flex;
+            width: 25%;
+            flex-wrap: wrap-reverse;
+        }
+        .column{
+            height: 25vh;
+            display: flex;
+            gap: 25px;
+            background-color: cadetblue;
+        }
+        .c1{
+            border: 2px solid black;
+            flex: 1;
+            background-color: darkturquoise;
+        }
+        .card{
+            border: 5px solid black;
+            background-color: bisque;
+            padding: 20px;
+            margin: 20px;
+        }
+        .cardd{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 35px;
+            padding: 20px;
+            margin: 20px;
+            
+        }
+        .card1{
+            background-color: burlywood;
+            border: 5px solid black; 
+      }
+      .card2{
+        background-color: burlywood;
+            border: 5px solid black; 
+      }
+      .card3{
+        background-color: burlywood;
+        border: 5px solid black; 
+      }
+      .outercontainer{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        height: 300px;
+      }
+      .sidebar{
+        flex: 1;
+        background-color: lightcoral;
+      }
+      .inner{
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        gap: 10px;
+        background-color: lightblue;
+      }
+      .nest{
+        flex: 1;
+        background-color: steelblue;
+        color: white;
+      }
+      .flex-section{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      .flex-card{
+        flex: 1 1 300px;
+        background-color: aquamarine;
+        padding: 20px;
+      }
+      .align{
+        height: 50vh;
+        border: 2px solid;
+        background-color: rgb(221, 195, 91);
+        display: flex;
+        gap: 25px;
+      }
+      .str{
+        flex: 1; 
+        align-items: stretch;
+        border: 2px solid;
+      }
+      .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .login label{
+        display: block;
+        margin-bottom: 8px;
+        font-size: 20px;
+      }
+      .login input{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .login input:focus{
+        outline: none;
+        border-color: blue;
+      }
+      button{
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 12px;
+        margin-top: 10px;
+      }
+      button:hover{
+        background-color: blue;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <!--Program 1-->
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div><br><hr>
+    <!-- program 2-->
+     <div class="container1">
+        <div class="boxx">Box 1</div>
+        <div class="boxx">Box 2</div>
+        <div class="boxx">Box 3</div>
+        <div class="boxx">Box 4</div>
+        <div class="boxx">Box 5</div>
+    </div><br><hr>
+    <!-- Program 3-->
+     <div class="container11">
+        <div class="boxx1">Box 1</div>
+        <div class="boxx1">Box 2</div>
+        <div class="boxx1">Box 3</div>
+        <div class="boxx1">Box 4</div>
+        <div class="boxx1">Box 5</div>
+    </div><br><hr>
+    <!-- Program 4 -->
+     <div class="container12">
+        <div class="box1">Box 1</div>
+        <div class="box1">Box 2</div>
+        <div class="box1">Box 3</div>
+        <div class="box1">Box 4</div>
+        <div class="box1">Box 5</div>
+    </div><br><hr>
+    <!-- program 5 -->
+     <div class="contain12">
+        <div class="box12">Box 1</div>
+        <div class="box12">Box 2</div>
+        <div class="box12">Box 3</div>
+        <div class="box12">Box 4</div>
+        <div class="box12">Box 5</div>
+    </div><br><hr>
+    <!-- Program 6 -->
+     <div class="container123">
+        <div class="box11">Box 1</div>
+        <div class="box11">Box 2</div>
+        <div class="box11">Box 3</div>
+        <div class="box11">Box 4</div>
+        <div class="box11">Box 5</div>
+    </div><br><hr>
+    <!-- Program 7 -->
+     <nav>
+        <a href="Home">Home</a>
+        <a href="Home">About</a>
+        <a href="Home">Gallery</a>
+        <a href="Home">Skills</a>
+        <a href="Home">Contact</a>
+     </nav><br><hr>
+     <!-- Program 8-->
+      <div class="contain121">
+        <div class="box123">Box 1</div>
+        <div class="box123">Box 2</div>
+        <div class="box123">Box 3</div>
+        <div class="box123">Box 4</div>
+        <div class="box123">Box 5</div>
+    </div><br><hr>
+    <!-- program 9-->
+     <div class="contain11">
+        <div class="box13">Box 1</div>
+        <div class="box13">Box 2</div>
+        <div class="box13">Box 3</div>
+        <div class="box13">Box 4</div>
+        <div class="box13">Box 5</div>
+    </div><br><hr>
+    <!-- program 10 -->
+     <div class="contain123">
+        <div class="box3">Box 1</div>
+        <div class="box3">Box 2</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 4</div>
+        <div class="box3">Box 5</div>
+    </div><br><hr>
+    <!-- Program 11 -->
+     <div class="containe">
+        <div class="bo">Box 1</div>
+        <div class="bo">Box 2</div>
+        <div class="bo">Box 3</div>
+        <div class="bo">Box 4</div>
+        <div class="bo">Box 5</div>
+    </div><br><hr>
+    <!-- program 12 -->
+    <div class="contain">
+        <div class="ox">Box 1</div>
+        <div class="ox">Box 2</div>
+        <div class="ox">Box 3</div>
+        <div class="ox">Box 4</div>
+        <div class="ox">Box 5</div>
+    </div><br><hr>
+    <!-- program 13 -->
+     <footer>All rights reserved to the owner<br>&copy;</footer><hr>
+     <!-- program 14 -->
+      <div class="contain1">
+        <div class="ox1">Box 1</div>
+        <div class="ox1">Box 2</div>
+        <div class="ox1">Box 3</div>
+        <div class="ox1">Box 4</div>
+        <div class="ox1">Box 5</div>
+    </div><br><hr>
+    <!-- program 15 -->
+     <div class="contain13">
+        <div class="box11">Box 1</div>
+        <div class="box11">Box 2</div>
+        <div class="box11">Box 3</div>
+        <div class="box11">Box 4</div>
+        <div class="box11">Box 5</div>
+    </div><br><hr>
+    <!-- Program 16 -->
+     <div class="contain134">
+        <div class="box2">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box2">Box 3</div>
+        <div class="box2">Box 4</div>
+        <div class="box2">Box 5</div>
+    </div><br><hr>
+    <!-- program 17 -->
+     <div class="con134">
+        <div class="abox2">Box 1</div>
+        <div class="abox2">Box 2</div>
+        <div class="abox2">Box 3</div>
+        <div class="abox2">Box 4</div>
+        <div class="abox2">Box 5</div>
+    </div><br><hr>
+    <!-- Program 18 -->
+    <div class="order">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+    </div><br><hr>
+    <!-- Program 19 -->
+     <div class="order1">
+        <div class="items">Item 1</div>
+        <div class="itemss">Item 2</div>
+        <div class="itemss">Item 3</div>
+        <div class="itemss">Item 4</div>
+     </div><br><hr>
+     <!-- Program 20 -->
+      <div class="con1234">
+        <div class="abox12">Box 1</div>
+        <div class="abox12">Box 2</div>
+        <div class="abox12">Box 3</div>
+        <div class="abox12">Box 4</div>
+        <div class="abox12">Box 5</div>
+    </div><br><hr>
+    <!-- Program 21 -->
+     <div class="column">
+        <div class="c1">Column 1</div>
+        <div class="c1">Column 2</div>
+     </div><br><hr>
+     <!-- Program 22 -->
+      <div class="card">
+      <h1>Pricing card layout</h1>
+      <div class="cardd">
+      <div class="card1">
+        <h2>Basic</h2>
+        <p>Ideal for beginners</p>
+        <p>price:199</p>
+      </div>
+      <div class="card2">
+        <h2>Premium</h2>
+        <p>Ideal for professionals</p>
+        <p>Price:399</p>
+      </div>
+      <div class="card3">
+        <h2>Standard</h2>
+        <p>Ideal for all profeesionals</p>
+        <p>Price: 299</p>
+      </div></div></div><br><hr>
+      <!-- Program 23 -->
+       <div class="outercontainer">
+        <div class="sidebar">Sidebar items</div>
+        <div class="inner">
+            <div class="nest">Nested box 1</div>
+            <div class="nest">Nested box 2</div>
+        </div>
+       </div><br><hr>
+       <!-- Program 24 -->
+        <section class="flex-section">
+            <div class="flex-card">Item 1</div>
+            <div class="flex-card">Item 2</div>
+            <div class="flex-card">Item 3</div>
+            </section><br><hr>
+        <!--Program 25 -->
+        <div class="align">
+            <div class="str">Box 1</div>
+            <div class="str">Box 2</div>
+            <div class="str">Box 3</div>
+        </div><br><hr>
+        <!-- Program 26 -->
+         <div class="form">
+            <FORM CLASS="LOG">
+                <h1>LOGIN FORM</h1>
+            <div class="login">
+                <label>Enter your email id</label>
+                <input type="email"><br>
+            </div>
+            <div class="login">
+                <label>Enter your password </label>
+                <input type="password"><br>
+            </div>
+            <button type="submit">SUBMIT</button></FORM>
+         </div>
+</body>
+</html>

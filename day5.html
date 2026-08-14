@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <form><h1>Registration Form</h1><br>
+        <label for="name">ENTER YOUR NAME</label>
+        <input type="text" id="name" name="name" required><BR>
+        <label for="email">ENTER YOUR EMAIL</label>
+        <input type="text" id="email" name="email" required><br>
+        <label for="password">ENTER YOUR PASSWORD</label>
+        <input type="text" id="password" name="password" required><br>
+        <label for="dob">ENTER YOUR DATE OF BIRTH</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="file">UPLOAD YOUR RESUME</label>
+        <input type="file" id="file" name="file" required><br>
+        <label for="color">FAVOURITE COLOR</label>
+        <input type="color" id="color" name="color"><br>
+        <button type="submit">SUBMIT</button>
+    </form><HR>
+    <form><h1>Job Application Form</h1>
+        <label for="name">ENTER YOUR NAME</label>
+        <input type="text" id="name" name="name" required><BR>
+        <label for="email">ENTER YOUR EMAIL</label>
+        <input type="text" id="email" name="email" required><br>
+        <label for="password">ENTER YOUR PASSWORD</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="dob">ENTER YOUR DATE OF BIRTH</label>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="file">UPLOAD YOUR RESUME</label>
+        <input type="file" id="file" name="file" required><br>
+        <label for="position">SELECT YOUR POSITION</label>
+        <select>
+        <option>WEB DEVELOPER</option>
+        <option>DATA ANALYST</option>
+        <option>FULLSTACK DEVELOPER</option>
+        <option>PYTHON DEVELOPER</option></select>
+        <br><br>
+        <button type="submit">SUBMIT</button>
+    </form><hr>
+    <form>
+        <h1>PROFILE EDITOR</h1>
+        <label for="userid">YOUR USER ID</label>
+        <input type="hidden" id="userid" name="userid"></label><br>
+        <label for="name">ENTER YOUR NAME</label>
+        <input type="name" id="name" name="name"><br>
+        <label for="email">ENTER YOUR EMAIL ADDRESS</label>
+        <input type="mail"disabled><br>
+        <label for="experience">CHOOSE YOUR EXPERIENCE</label>
+        <input type="range" min="3" max="7"><br>
+        <button type="submit">OK</button>
+    </form><HR>
+        <form>
+            <h1>CUSTOM COLOR SELECTOR</h1>
+            <label for="color">FAVOURITE COLOR</label>
+        <input type="color"><br>
+        <p>Your selected color will display here.</p>
+        </form><hr>
+        <form>
+            <h2>SIMPLE POLL SYSTEM</h2>
+            <label>What is your ambition</label><br>
+            <input type="radio" name="ambition">DOCTOR<br>
+            <input type="radio" name="ambition">TEACHER<br>
+            <input type="radio" name="ambition">POLICE<br>
+            <button type="submit">THANK YOU</button>
+        </form><hr>
+        <form><h1>DROPDOWN COUNTRY</h1>
+        <label>CHOOSE YOUR COUNTRY</label><BR>
+        <select>
+            <option>INDIA</option><BR>
+            <option>USA</option><BR>
+            <option>UK</option><BR>
+            <option>UAE</option>
+        </select><br>
+        <button type="submit">THANK YOU FOR CHOOSING</button>
+        </form><hr>
+        <FORM><h1>COMMENT SECTION</h1><BR>
+            <label>Comment your opinion</label>
+            <textarea rows="10" cols="100"></textarea><BR>
+            <p>Maximum 300 character allowed</p><br>
+            <button type="submit">SUBMIT</button><hr>
+         </FORM><hr>
+         <form>
+            <h1> AUTOCOMPLETE FIELDS</h1>
+            <label>BROWSERS</label><BR>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="chrome"></option>
+                <option value="FIREFOX"></option>
+                <option value="opera"></option>
+                <option value="safari"></option>
+                <option value="edge"></option>
+            </datalist>
+         </form>
+         <form>
+            <h1>PROFILE</h1>
+            <fieldset> 
+            <legend>PERSONAL DETAILS</legend>
+        <label>NAME</label>
+        <input type="text"><br><br>
+        <label>EMAIL</label>
+        <input type="text">
+        </fieldset><br>
+        <fieldset>
+            <legend>ADDRESS DETAILS</legend>
+            <label>DOOR NUMBER</label>
+            <input text="number"><br>
+            <label>STREET NAME</label>
+            <input type="text"><br>
+        </fieldset><br>
+        <input type="submit" value="SUBMIT">
+         </form>
+         <form>
+            <h1>DELIVERY FORM</h1>
+            <label>Select your payment method</label>
+            <select>
+                <option>UPI</option>
+                <option>Cash</option>
+                <option>Card</option>
+            </select>
+            <textarea rows="5" cols="100"></textarea><br>
+            <p>Thank you for choosing</p>
+         </form>
+         <form>
+            <h1>USERNAME VALIDATION</h1>
+            <label> Enter your name:</label>
+            <input type="text" pattern="[A-Za-z]{3}" placeholder required><br>
+            <label>Enter your age</label>
+            <input type="number" min="18" max="30" required><br>
+            <button type="submit">SUBMIT</button>
+         </form><hr>
+         <form>
+            <h1>LOGIN FORM</h1>
+            <label>ENTER YOUR EMAIL</label>
+            <input type="text" required><BR>
+            <label>PASSWORD</label>
+            <input type="password" minlength="8" required></label><br>
+            <button type="submit">REGISTER</button><BR>
+         </form>
+         <form>
+            <h1>SURVEY FORM</h1>
+            <label>USER ID</label>
+            <input type="text" value="101" readonly><br>
+            <label>AVAILABLE OPTIONS</label>
+            <input type="text" value="java"><br>
+            <label>UNAVAILABLE OPTIONS</label>
+            <input type="text" value="HTML" disabled><br>
+            <button type="submit">SUBMIT</button>
+         </form>
+         <form>
+            <h1>QUIZ FORM</h1>
+            <label>What is HTML?</label>
+            <input type="text" autofocus placeholder="Enter your answer"><br>
+            <label>What is css?</label>
+            <input type="text" autofocus placeholder="Enter Your answer"><br>
+            <button type="submit">SUBMIT</button>
+         </form>
+         <form>
+            <h1>Different Validations</h1>
+            <label>Enter your email</label>
+            <input type="password" name="password"><br>
+            <label>RATING 1 to 10</label>
+            <input type="number" min="1" max="10"><br>
+            <label>ZIP CODE</label>
+            <input type="number" pattern="[0-9]{6}" required><BR>
+            <button type="submit">SUBMIT</button><BR><HR>
+         </form>
+
+    
+    
+</body>
+</html>

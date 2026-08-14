@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MINI PROJECT DAY 2</title>
+    <style>
+        article a[href]{
+            background-color: rgba(158, 110, 110, 0.4);
+        }
+        article a[href]:hover{
+            background-color: aqua;
+            font-size: larger;
+        }
+        div{
+            background: radial-gradient(circle,skyblue,lightblue,white);
+            text-align: center;
+        }
+        span a[href]{
+            font-size: larger;
+        }
+        header{
+            background: linear-gradient(blue,darkblue);
+            color: white;
+            text-align: center;
+        }
+        section{
+            text-align: center;
+            background: radial-gradient(circle,lightblue);
+        }
+        .tick::before{
+            content: "\2714";
+        }
+        button{
+            background-color: lightcoral;
+        }
+        button:hover{
+            background-color: darkred;
+            font-size: larger;
+        }
+        .card{
+            background: #f5f5f5;
+        }
+        article{
+            background: radial-gradient(lightpink,pink);
+        }
+        article:hover{
+            background: radial-gradient(lightcoral);
+            color: white;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        #test{
+            background-color: rgba(247, 161, 190, 0.3);
+            
+
+        }
+        #test:hover{
+            background-color: rgba(247,161,190,0.67);
+            color: brown;
+            font-style: italic;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.5s ease, color 0.5s ease;
+        }
+        #skill h2:hover {
+            color: #0066cc;
+        }
+
+        .bar {
+            background-color: #dcdcdc;
+        }
+
+        .progress {
+            color: white;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .progress:hover {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: black;
+        }
+
+        .html {
+            width: 90%;
+        }
+
+        .css {
+            width: 85%;
+        }
+
+        .javascript {
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+<!-- PRO 1 NAVIGATION BAR WITH HOVER EFFECT -->
+ <article>
+    <a href="HOME"> HOME </a><BR><br>
+    <a href="about us"> ABOUT US</a><br><br>
+    <a href="Gallery"> GALLERY </a><br><br>
+    <a href="Contact us"> CONTACT </a><br><br>
+ </article><hr>
+<!--Project 2-->
+<div>
+<h1 style="color: darkblue;text-align: center;">Product Name</h1>
+<p>This is an amazing product that you will <br>love</p>
+<button style="border: solid black;background-color: aqua;">BUY NOW</button>
+</div><hr>
+<!-- Pro 3-->
+ <h1 style="text-align: center;">PERSONAL PORTFOLIO PAGE</h1><BR>
+    <h2 style="text-align: left;">ANUSHA LAKSHMI</h2>
+<span>
+    <a href="HOME"> HOME </a> |
+    <a href="about us"> ABOUT US</a> |
+    <a href="skills"> SKILLS </a> |
+    <a href="Contact us"> CONTACT </a> 
+    <P style="font-size: large;">Hi<br>I'm Anusha Lakshmi<br> Python Fullstack Intern</P>
+    <img src="girl.avif" alt="Picture" height="150" width="150"></span><hr>
+<!--Project 4 -->    
+<header>
+    <h1>WELCOME TO OUR PRODUCTS</h1>
+    <H4>The best solutions for all your needs</H4>
+</header>
+<section>
+    <h2> Why choose us</h2>
+    <p> We provide top-quality service with customer satisfaction as our priority</p>
+    <p class="tick">High Perfomance</p>
+    <p class="tick">24/7 Support</p>
+    <p class="tick">Affordable pricing</p><br>
+    <button> Get Started </button>
+</section>
+<footer style="background-color: blue;text-align: center;color: white;">
+    <p>Contact us at:support@example.com</p>
+</footer><hr>
+<!--Service card highlights-->
+<section class="card">
+    <article>
+        <h3> WEB DESIGN</h3>
+        <P>Creating responsive and modern design</P>
+    </article>
+    <article>
+        <h3>SEO</h3>
+        <p> Improving search engines ranking and visibility</p>
+    </article>
+    <article>
+        <h3>MARKETING</h3>
+        <P> Developing effective digital marketing strategies</P>
+    </article>
+</section><hr>
+<!--Program 6 Testimonials Sections-->
+    <figure id="test">
+        <p>"The team delivered an amazing website ahead of schedule. Highly recommended!"</p>
+        <figcaption>~priya sharma,Enterpreneur </figcaption>
+    </figure>
+    <figure id="test">
+        <p>"Their SEO strategies helped us increase our traffic significantly within months."</p>
+        <figcaption>~Meena Raj, Business Owner</figcaption>
+    </figure>
+    <figure id="test">
+        <p>"Excellent support and outstanding service. We will definitely work with them again."</p>
+        <figcaption>~Arjun Kumar,Marketing Lead</figcaption>
+    </figure>
+    <footer>
+        &copy; 2026 Client Testimonials. All rights reserved.
+    </footer><hr>
+<!--Gradient Hero Banner -->
+<header>
+        <h1>Welcome to Our Website</h1>
+        <h2>Innovative solutions for your digital success.</h2>
+        <button style="background-color: chartreuse;">Get Started</button>
+</header><hr>
+<!-- Simple Skills Program Display-->
+ <section id="skill">
+        <h2>HTML</h2>
+        <div class="bar">
+            <div class="progress html">90%</div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <h2>CSS</h2>
+        <div class="bar">
+            <div class="progress css">85%</div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <h2>JavaScript</h2>
+        <div class="bar">
+            <div class="progress javascript">75%</div>
+        </div>
+    </section>
+</body>
+</html>

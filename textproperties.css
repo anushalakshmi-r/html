@@ -1,0 +1,105 @@
+header{
+    text-align: center;
+    background-color: aqua;
+}
+a[href]{
+    text-decoration: none;
+}
+button{
+    text-transform: uppercase;
+}
+body{
+    font-family: Arial, Helvetica,sans-serif;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+}
+h1{
+    font-size: 32px;
+    background-color: bisque;
+}
+em{
+    font-style: italic;
+}
+strong{
+    font-weight: bolder;
+}
+.height p{
+    line-height: 1.5;
+    background-color: burlywood;
+}
+h2{
+    letter-spacing: 3px;
+    background-color: darkgray;
+}
+nav li{
+    text-transform:capitalize ;
+    font-size: 20px;
+}
+.div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+footer{
+    font-family: 'poppins',sans-serif ;
+    font-size: 20px;
+    background-color: gainsboro;
+}
+.para p{
+    text-align: right;
+    background-color: rgb(126, 235, 184);
+}
+span{
+    text-decoration: line-through;
+}
+.class{
+    text-transform: lowercase;
+    background-color: rgb(252, 236, 174);
+}
+.head{
+    font-family: Georgia, serif;
+}
+.font{
+    font-family: 'poppins';
+}
+.size{
+    font-size: 18px;
+    background-color: rgb(105, 77, 77);
+    font-family: 'noto sans mende kikakui',sans-serif;
+    font-weight: bold;
+}
+.container{
+    font-style: italic;
+}
+.italic{
+    font-style: normal;
+}
+.light-text{
+    font-weight: 300;
+    font-size: 30px;
+    background-color: rgb(228, 187, 84);
+}
+blockquote{
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(255, 127, 81);
+}
+.nav{
+    letter-spacing: 1px;
+    background-color: rgb(179, 158, 120);
+}
+#class{
+    text-transform: none;
+    background-color: rgb(177, 54, 79);
+}
+main{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 19px;
+}
+.logo{
+    font-family: lobster;
+    font-size: larger;
+    background-color: hotpink;
+}

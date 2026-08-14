@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Tasks</title>
+    <style>
+        .content{
+            box-sizing: content-box;
+            padding: 15px;
+            border: 5px inset blue;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .border{
+            box-sizing: border-box;
+            padding: 15px;
+            border: 5px outset blue;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .box{
+            width: 60%;
+            padding: 20px;
+            margin: 40px auto;
+            border: 5px solid black;
+        }
+        BUTTON{
+            padding: 12px 24px;
+            background-color: royalblue;
+            color: white;
+            border: 2px ridge black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .one{
+            margin: 15px 20px;
+            border: 5px double blueviolet;
+        }
+        .two{
+            margin: 15px 15px;
+            border: 5px groove black;
+        }
+        footer{
+            border: 5px solid black;
+            padding: 15px;
+        }
+        .container{
+            width: 400px;
+            box-sizing: border-box;
+            border: 4px solid black;
+            background-color: lightcyan;
+            padding: 20px;
+            margin: 15px auto;
+        }
+        .class{
+            width: 100%;
+            padding: 5px auto;
+            border: 2px double royalblue;
+            font-size: large;
+            background-color: lightgreen;
+        }
+        .class1{
+            background-color: orange;
+            color: white;
+            padding: 15px;
+            border: 5px ridge white;
+        }
+        .card{
+            border: 5px ridge black;
+            text-align: center;
+            padding: 15px;
+            width: 60%;
+            margin: 15px auto;
+            background-color: bisque;
+            font-family: cursive;
+        }
+        .box1{
+            border: 5px double darkcyan;
+            margin: 5px;
+            padding: 15px;
+            font-size: larger;
+        }
+        .divide{
+            border: 5px solid black;
+            text-align: center;
+            box-sizing: border-box;
+            width: 70%;
+            padding: 15px auto;
+            margin: 15px auto;
+        }
+        .divide1{
+            border: 5px ridge blue;
+            margin: 5px;
+            padding: 15px;
+        }
+        .divide2{
+            border: 5px ridge blueviolet;
+            margin: 8px;
+            padding: 20px;
+        }
+        .cardd{
+            border: 5px solid royalblue;
+            margin: 15px;
+            padding: 15px auto;
+        }
+        .card1{
+            border: 2px solid black;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .card2{
+            border: 2px solid black;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        header{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;        
+            background-color: #4CAF50;
+            color: white;
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+        }
+        .pad{
+            padding: 20px;
+            margin: 30px; 
+            border: 5px solid red;
+            background-color: antiquewhite;
+        }
+        nav{
+            padding: 15px;
+            border: 2px solid black;
+            background-color: lightseagreen;
+        }
+        a[href]{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            letter-spacing: 3;
+        }
+        .image{
+            border: 7px solid black;
+            margin: 30px auto;
+            width: 50%;
+            padding: 30px;
+            overflow-x: auto;
+        }
+        .imageb{
+            margin: 0 auto;
+            border: 3px solid blue;
+        }
+        .left{
+            padding-left: 40px;
+            background-color: limegreen;
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+        .aaa{
+            box-sizing: content-box;
+            background-color: greenyellow;
+            font-size: larger;
+            font-weight: bolder;
+            padding: 15px;
+            margin: 15px;
+        }
+        .borderbox{
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 25px;
+            margin-bottom: 15px;
+        }
+        .bb1{
+            width: 40vw;
+            border: 2px solid rgb(6, 212, 248);
+        }
+        .bb2{
+            width: 40vw;
+            border: 2px solid blue;
+        }
+        .bb3{
+            width: 70%;
+            margin: 80px auto 0;
+            padding: 20px;
+            background-color: lightblue;
+            border: 2px solid #333;
+            border-radius: 8px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .btn{
+            padding: 20px 25px;
+            background-color: #4CAF50;
+        }
+        .one1{
+            margin-bottom: 20px;
+            background-color: darkkhaki;
+            font-size: 20px;
+        }
+        blockquote{
+            border: 5px ridge black;
+            line-height: 2;
+            padding: 15px;
+            margin: 15px;
+        }
+        .onetwo{
+            display: flex;
+            gap: 25px;
+            margin: 15px;
+            border: 5px solid rgb(243, 10, 10);
+        }
+        .cont{
+            margin: 15px;
+            width: 150px;
+            border: 3px solid;
+            border-radius: 5px;
+        }
+        .cardc{
+            width: 400px;
+            padding: 20px;
+            margin: 15px;
+            background-color: palevioletred;
+            text-align: center;
+            border: 5px ridge rgb(230, 14, 50);
+            text-shadow: 5px 5px 5px grey;
+            box-shadow: 20px 20px 20px grey;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            border-radius: 8px;
+        }
+        .justify{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            line-height: 2;
+            letter-spacing: 2px;
+            height: 50vh;
+            overflow-y: scroll;
+            width: 50%;
+            overflow-x: scroll;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+<!--Program 1  -->
+    <div class="content">
+        <p>Apple is my favourite fruit</p>
+    </div><hr>
+<!-- Program 2 -->
+     <div class="border">
+        <p> Watermelon is a summer season fruit</p>
+     </div><hr>
+<!-- Program 3 -->
+      <section class="box">
+        <p>Example of centre a section tag horizontally using margin auto</p>
+      </section><hr>
+<!-- Program 4 -->
+       <button> CLICK ME</button><hr>
+<!-- Program 5 -->
+        <article class="one">
+          Article one: Mariegold is commonly used in all over india.
+        </article>
+        <article class="two">
+           Article two: Asia is the biggest continent of the world
+        </article><hr>
+<!-- Program 6 -->
+         <footer>
+            This page is reserved for the owner
+         </footer><hr>
+<!-- Program 7 -->
+         <div class="container">
+            <div class="class">
+                <h2> Example </h2>
+                <p>Example of Nested element using box sizing border box and fix space issues</p>
+            </div>
+         </div><hr>
+<!-- Program 8 -->
+        <div class="class1">
+            <p> Orange has 2 meaning one is fruit and other one is color</p>
+        </div>
+<!--Program 9-->
+        <div class="card">
+            <h2> Card </h2>
+        <p>Responsive card for padding margin and border</p>
+        </div><hr>
+<!--Program 10-->
+    <section class="box1">
+        Example of border section to highlight
+    </section><hr>
+<!-- Program 11 -->
+     <div class="divide">
+        <h1>FRUITS</h1>
+        <div class="divide1">
+            <p>Strawberry is sweet in flavour</p>
+        </div>
+        <div class="divide2">
+            <p>Banana is goof source of potassium</p>
+        </div>
+     </div><hr>
+<!-- Program 12 -->
+      <div class="cardd">
+        <h2>Card Design</h2>
+      <div class="card1">
+        <h2>Card</h2>
+        <p>Card 1</p>
+      </div>
+    <div class="card2">
+        <h2>Card</h2>
+        <p>Card 2</p>
+    </div></div><hr>
+<!-- Program 13 -->
+     <header>Welcome to my Page</header><hr>
+<!-- Program 14 -->
+      <div class="pad">
+        Example of padding and margin
+      </div><hr>
+<!-- Program 15 -->
+       <nav>
+        <a href="home">Home </a>
+        <a href="gallery"> Gallery </a>
+        <a href="contact"> Contact </a>
+       </nav><hr>
+<!-- Program 16 -->
+       <div class="image">
+        <h1> Image </h1>
+        <div class="imageb">
+        <img src="download.jpg" alt="flower" width="250" height="200">
+        </div></div><hr>
+<!-- Program 17-->
+     <div class="left">
+        <p> happy or satisfied with what you have or do</p>
+        <p>the thing or things that are inside something.</p>
+     </div><hr>
+<!-- Program 18 -->
+      <div class="aaa">
+        Content bon example to visualize hot the added padding works with total width
+      </div><hr>
+<!-- Program 19 -->
+       <div class="borderbox">
+        <h1> Side By Side box </h1>
+        <div class="parent">
+        <div class="bb1">
+            <h1>Box 1</h1>
+        </div>
+        <div class="bb2">
+            <h1>Box 2</h1></div></div></div><hr>
+<!-- program 20 -->
+        <section class="bb3">
+        <h2>Welcome!</h2>
+        <p>This section is pushed down from the top using margin-top.</p>
+        </section><hr>
+<!--Program 21-->
+        <button class="btn"> CLICK ME</button><hr>
+<!--Program 22-->
+        <article class="one1">
+            Article 1
+        </article>
+        <article class="one1">
+            Article 2
+        </article>
+        <article class="one1">
+            Article 3
+        </article><hr>
+<!--program 23-->
+    <blockquote>It is a block-level element that web browsers typically display with a default indentation on both sides</blockquote><hr>
+<!-- Program 24 -->
+        <div class="onetwo">
+            <div class="cont">
+            <p>Box 1</p>
+        </div>
+        <div class="cont">
+            <p>Box 2</p>
+        </div>
+        <div class="cont">
+            <p>Box 3</p>
+        </div>
+    </div><hr>
+    <!-- Program 25 -->
+     <div class="cardc">
+        <h1> Card</h1>
+        <p>Modern Card Effect</p>
+     </div><hr>
+     <!-- Program 26 -->
+      <div class="justify">
+        Rose :A sweet-smelling plant with thorns on its stem, often red, pink, or white.<br>
+        Sunflower :A tall, bright yellow plant that turns to face the sun.<br>
+        Lotus : A sacred water flower with large, flat pads that float on ponds.<br>
+        Jasmine : A small white flower with a very sweet and strong smell.<br>
+        Lily : A large, trumpet-shaped bloom that grows from bulbs in many colors.<br>
+        Marigold : A bright orange or yellow garden flower with many layered petals.<br>
+        Hibiscus : A large, tropical flower with wide petals and a long center stem.<br>
+        Tulip : A cup-shaped spring flower that grows straight up on a single green stem.<br>
+        Daisy : A simple white flower with a bright yellow center.<br>
+      </div><hr>
+
+</body>
+</html>

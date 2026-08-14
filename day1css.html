@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 1 CSS</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        h2{
+            color: blue;
+            font-size: 24px;
+        }
+        .tom{
+            background-color: yellow;
+        }
+        #cta{
+            background-color: green;
+            color: white;
+        }
+        a[target="_blank"]{
+            color: purple;
+        }
+        section>h1,h2,h3{
+            font-size: larger;
+            color: brown;
+        }
+        div p{
+            background-color: chartreuse;
+            font-size: larger;
+            color: magenta;
+        }
+        ul>li{
+            background-color: linear-gradient;
+            color: black;
+        }
+        h1+p{
+            font-style: italic;
+        }
+        button:hover{
+            background-color: red;
+            font-size: large;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1> Program 1 universal selector</h1>
+    <p>Includes padding and margin for all element as 0</p><br><hr>
+    <h1>Program 2 Type selector</h1>
+    <h2>Welcome to the page</h2>
+    <h2>Courses available here</h2>
+    <h2>Thank you for visiting us</h2><br><hr>
+    <h1>Program 3 using class</h1>
+    <p class="tom"> Here we are using class selector(.) to highlight</p>
+    <br><hr>
+    <h1>Program 4 button </h1><br><br>
+    <button id="cta">Submit</button><br><hr>
+    <h1>Program 5 Links</h1><br>
+    <a href="home" target="_blank">Home</a> |
+    <a href="About us" target="_blank">About us</a> |
+    <a href="Contact" target="_blank">Contact</a><br><hr>
+    <h1>Program 6 Group Selector</h1>
+    <section>
+        <h1>Helloo</h1>
+        <h2>Welcome to the page</h2>
+        <h3>This is am company</h3>
+    </section><br><hr>
+    <h1>Program 7 Descendant selector</h1>
+    <div>
+        <p>Apple</p>
+        <p>Banana</p>
+        <p>custard Apple</p>
+    </div>
+    <p>This is outside text</p><br><hr>
+    <h1>Program 8 child selector</h1>
+    <ul>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Rabbit</li>
+        <li>Monkey</li>
+    </ul><br><hr>
+    <h1>Program 9 Adjacent Sibling Selector</h1>
+    <p>This is Adjacent Sibling Selector</p><br>
+    <p>We use plus as this symbol</p><br>
+    <p>Immediate sibling</p><br><hr>
+    <h1>Program 10 hover</h1><br>
+    <button>HOVER BUTTON</button><br><hr>
+    <h1>Program 11 Pseudo nth child</h1><br>
+    <table border="2">
+        <tr>
+            <th>NAME</th>
+            <TH>AGE</TH>
+            <TH>QUALIFICATION</TH>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>20</td>
+            <td>B.Sc</td>
+        </tr>
+        <tr>
+            <td>Manu</td>
+            <td>21</td>
+            <td>M.Sc</td>
+        </tr>
+        <tr>
+            <td>Laksh</td>
+            <td>22</td>
+            <td>ME</td>
+        </tr>
+        <tr>
+            <td>Meenu</td>
+            <td>24</td>
+            <td>BE</td>
+        </tr>
+        <tr>
+            <td>Anusha</td>
+            <td>22</td>
+            <td>M.Sc</td>
+        </tr>
+    </table>
+</body>
+</html>

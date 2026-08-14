@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MINI PROJECTS</title>
+    <link rel="stylesheet" href="basic.css">
+    <style>
+        #class{
+            background-color: darkgoldenrod;
+            font-size: medium;
+        }
+        .jem{
+            color: red;
+
+        }
+        tr:nth-child(even){
+            background-color: lightblue;
+        }
+        main p::before{
+            content:'*';
+            color: darkblue;
+
+        }
+        main p.done::after{
+            content: 'DONE';
+            color: green;
+        }
+        main p.no::after{
+            content: 'NOT DONE';
+            color: red;
+        }
+        a:hover{
+            color: magenta;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a::before{
+            content:"\f019"
+        }
+        article tr:nth-child(even){
+            background-color: lightpink;
+        }
+        input:focus{
+            background-color: chocolate;
+        }
+        article input:hover{
+            background: linear-gradient(red,yellow);
+            font-size: large;
+        }
+        .basic{
+            background-color: aqua;
+            font-size: medium;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .standard{
+            background-image: radial-gradient(violet);
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .premium{
+            background-color: cornflowerblue;
+            font-size: medium;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div p::before{
+            content: "\2714";
+        }
+        button:hover{
+            font-size: larger;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: auto;
+            color: #333;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 30px;
+        }
+        .gallery img{
+            width:90%;
+            height:150px;
+            object-fit:cover;
+            border-radius:10px;
+            transition:0.4s;
+            cursor:pointer;
+        }
+        .gallery img:hover{
+            transform:scale(1.08);
+            filter:grayscale(50%);
+}
+    </style>
+</head>
+<body>
+<!--BUTTON STYLE SHOWCASE-->
+    <h1> BUTTON STYLE SHOWCASE</h1>
+    <button id="class"> Submit </button><br><br>
+    <button class="tom"> Register</button><br><br>
+    <button style="background-color: greenyellow; width: auto;"> Click here to ok</button><br><br><hr>
+<!--Employee Data-->
+    <table border="5">
+        <tr>
+            <h1>Employee Data</h1>
+        </tr>
+        <tr style="background-color: blue; color: white;text-align: center;border-spacing: 50px;">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td class="jem">101</td>
+            <td>Anusha</td>
+            <td>IT</td>
+            <td>$60,000</td>
+        </tr>
+        <tr>
+            <td class="jem">102</td>
+            <td>Lakshmi</td>
+            <td>marketing</td>
+            <td>$75,000</td>
+        </tr>
+        <tr>
+            <td class="jem">103</td>
+            <td>Manu</td>
+            <td>Mechanic</td>
+            <td>$70,000</td>
+        </tr>
+        <tr>
+            <td class="jem">104</td>
+            <td>Mani</td>
+            <td>Engineer</td>
+            <td>$45,000</td>
+        </tr>
+        <tr>
+            <td class="jem">105</td>
+            <td>Kanna</td>
+            <td>Operations</td>
+            <td>$50,000</td>
+        </tr></table><br><hr>
+    <!--STYLED TO DO LIST-->
+        <main>
+            <h1 style="color: yellow;font-style: oblique;">TO DO LIST</h1>
+            <p class="done">Do Laundry</p>
+            <p class="done">Buy Groceries</p>
+            <p class="no">Book Tickets</p>
+            <p class="no">Do Exercise</p>
+        </main><br><hr>
+    <!--Navigation Menu-->
+        <h1>NAVIGATION MENU</h1>
+        <a href="HOME"> HOME</a><br><br>
+        <a href="ABOUT US"> ABOUT US</a><br><br>
+        <a href="Gallery"> GALLERY</A><br><br>
+        <a href="contact"> CONTACT US </a><br>
+        <br><hr>
+    <!--Comparison Table-->
+    <article>
+        <h1> Comparison table </h1>
+            <table border="3" >
+                <tr >
+                    <th>Features</th>
+                    <th>Price</th>
+                    <th>Storage</th>
+                    <th>Update</th>
+                    <th>Support</th>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>499</td>
+                    <td>Limited</td>
+                    <td>Paid Update</td>
+                    <td>Delay support</td>
+                </tr>
+                <tr style="background-color: lightcoral;">
+                    <td>Pro</td>
+                    <td>999</td>
+                    <td>Unlimited</td>
+                    <td>Free update</td>
+                    <td>24/7 support</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>1499</td>
+                    <td>Unlimited</td>
+                    <td>Free update</td>
+                    <td>24/7 support</td>
+                </tr>
+            </table>
+            </article><br><hr>
+<!--Login and sign up page-->
+    <h1> SIGN UP PAGE</h1>
+    <label> Enter your Name : </label><br>
+    <input type="text" name="name"><br>
+    <label> Enter Your Email: </label><br>
+    <input type="email" name="email"><br>
+    <label> Password :</label><br>
+    <input type="password" name="password"><br><hr>
+    <article>
+    <h1> LOGIN FORM</h1>
+    <label> Enter Your Email</label><br>
+    <input type="email" name="name"><br>
+    <label> Enter Your Password</label><br>
+    <input type="password" name="password">
+    </article><br><hr>
+<!--Responsive pricing cards-->
+    <h1> Choose any one pricing card form below</h1><br>
+    <button style="border:5px solid black;">
+    <div class="basic">
+        <h2> Basic card</h2>
+        <p>3GB Bandwidth</p>
+        <p>Free Domain</p>
+        <p>2 Databases</p>
+        <p>2 years support</p>
+    </div></button>
+    <button style="border: 8px dotted grey;">
+    <div class="standard">
+        <h2>Standard</h2>
+        <p>20 GB Bandwidth</p>
+        <p>Free Domain</p>
+        <p>5 Databases</p>
+        <p>6 years support</p>
+    </div></button>
+    <button style="border: 5px dashed black;">
+    <div class="premium">
+        <h2>Premium</h2>
+        <p>100GB Bandwidth</p>
+        <p>Free Domain</p>
+        <p>20 Databases</p>
+        <p>Lifetime Support</p>
+    </div></button><br><hr>
+<!--Responsive image gallery--> 
+   <div class="gallery">
+    <h1>FLOWER IMAGE GALLERY</h1><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXcv4OvjD8eyTxCmVslZ09kAX8gHXUloKnxzM_Orwmw2i2jQ_qaW9x_Lc&s=10" alt="Flower" height="150" width="150">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz0SaVOlkFjLv5ky0pWTq02xZKfkUovkq4XMmRUPIf8aYEBh4_sJ3e0G4I&s=10" alt="flower" height="150" width="150">
+    <img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.webp?b=1&s=612x612&w=0&k=20&c=o3n-h2j4aBnaDqKeY-876cTRm1DLOsZcCjcfDZf_9TQ=" alt="Flower" width="150" height="150">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKagCP1onEQTUOqy2jGaNKAexDGECqrawEevxSpT6YseNQoN8Ha7cC79A&s=10" alt="Flower" height="150" width="150">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmngjGqFQM0OcZO-nzt_UUaUl8Qt7l867G0JHzh7qIcD8cF9G0HA-671X5&s=10" alt="Flower" height="150" width="150">
+    <img src="https://media.istockphoto.com/id/511112100/photo/tulips.jpg?s=612x612&w=0&k=20&c=BIdlCAFoXLqYIIeFpJJ8Pmbw6_68vOPGEfLr8tInMhM=" alt="Flower" width="150" height="150">
+   </div><br><br><hr>
+</body>
+</html>

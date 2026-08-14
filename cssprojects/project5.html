@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+            margin: 2px;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+            background-color: #ffffff;
+            width: 100vw;
+            height: 100vh;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px grey;
+            text-align: center;
+        }
+        .container h1{
+            font-size: 50px;
+            margin-top: 15px;
+            color: #0077cc;
+        }
+        .container p{
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 30px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input,textarea{
+             margin-bottom:15px;
+             padding:12px;
+             border:1px solid #ccc;
+             border-radius:8px;
+             font-size:16px;
+             outline:none;
+        }
+        input:focus,
+        textarea:focus{
+            border-color:#0077cc;
+        }
+        button{
+            padding:12px;
+            background:#0077cc;
+            color:white;
+            border-radius:8px;
+        }
+        button:hover{
+             background:#002a47;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> CONTACT US </h1>
+        <P> We are here to hear your queries<br> Feel free to contact us </P>
+        <form> 
+            Send us your message<br>
+        <label for="name">ENTER YOUR NAME</label>
+        <input type="text" id="name" name="name" required><BR><br>
+        <label for="number">ENTER YOUR PHONR NUMBER</label>
+        <input type="number" id="number" name="email" required><br><br>
+        <label for="email">ENTER YOUR EMAIL ADDRESS</label>
+        <input type="text" id="email" name="email" required><br><br>
+        <label for="message">ENTER YOUR MASSAGE</label>
+        <textarea rows="5" cols="30"></textarea><br><br>
+        <button type="submit">SUBMIT</button>
+    </form><br><br>
+        </form>
+    </div>
+</body>
+</html>

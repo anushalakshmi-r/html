@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 mini project</title>
+    <style>
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-design{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        button{
+            background-color: #676767;
+            color: white;
+            padding: 10px;
+            margin: 40px;
+            border-radius: 10px;
+        }
+        .section{
+            text-align: center;
+            border: 1px solid ;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .section1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 30px;
+            margin: 30px;
+        }
+        .pic1{
+            border: 1px solid;
+            border-radius: 8px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px;
+        }
+        .response{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        .response1{
+            flex-basis: 200px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px grey;
+            text-align: center;
+        }
+        .featured{
+            align-self: center;
+        }
+        .response1 img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .response h2{
+            margin: 20px 0 10px;
+        }
+        .response1 button{
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+        .response1 button:hover{
+            background-color: #005fa3;
+        }
+        .pro1{
+            text-align: center;
+            border: 1px solid;
+            border-radius: 8px;
+            background-color: rgb(250, 244, 235);
+        }
+        .pro2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .pro3{
+             flex-grow: 1;
+            border: 1px solid white;
+            box-shadow: 2px 5px 20px grey;
+            border-radius: 8px;
+        }
+        .pp{
+            color: red;
+        }
+        .pricing{
+    padding:60px;
+    text-align:center;
+    }
+    .plans{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    }
+    .plan{
+    width:280px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    }
+    .popular{
+    border:3px solid royalblue;
+    }
+    .plan h3{
+    margin:20px 0;
+    color:royalblue;
+    font-size:30px;
+    }
+    .plan p{
+    margin:10px 0;
+    }
+    button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:royalblue;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    }
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0077cc;
+    padding:15px 40px;
+}
+.logo{
+    color:white;
+    font-size:28px;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+nav ul li a:hover{
+    color:yellow;
+}
+.contact-section{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+.contact-form,
+.contact-info{
+    flex:1;
+}
+.contact-form h2,
+.contact-info h2{
+    margin-bottom:20px;
+    color:#0077cc;
+}
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+    outline:none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#0077cc;
+}
+.contact-form button{
+    padding:12px;
+    background:#0077cc;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+.contact-form button:hover{
+    background:#005fa3;
+}
+.contact-info p{
+    margin-bottom:15px;
+    line-height:1.8;
+    color:#555;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:#f4f4f4;
+}
+
+.newsletter-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:30px;
+}
+
+.newsletter{
+
+    max-width:1100px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#0077cc,#00b4d8);
+
+    color:white;
+}
+
+.content{
+
+    flex:1;
+}
+
+.content h2{
+
+    font-size:32px;
+
+    margin-bottom:15px;
+}
+
+.content p{
+    line-height:1.7;
+}
+.signup{
+    flex:1;
+    display:flex;
+   gap:15px;
+    justify-content:flex-end;
+}
+.signup input{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    outline:none;
+    font-size:16px;
+}
+.signup button{
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    background:#222;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+.signup button:hover{
+    background:#000;
+}
+</style>
+</head>
+<body>
+    <!-- Simple card layout -->
+     <div class="card">
+        <img src="https://picsum.photos/300/200" alt="card design">
+        <div class="card-design">
+            <h2>Simple Card Design</h2>
+            <p>This card is made in simple HTML and CSS</p>
+            <button >Read More </button>
+        </div></div><br><hr>
+        <!-- 2.Feature Section -->
+         <div class="section">
+            <h1>Our Features</h1>
+            <div class="section1">
+                <div class="pic1">
+                    <img src="https://picsum.photos/300/200" alt="picture">
+                    <h2>Fast Performance</h2>
+                    <p>Experiencing lightening load times</p>
+                </div>
+                <div class="pic1">
+                    <img src="https://picsum.photos/300/200" alt="card picture">
+                    <h2>Secure Platform</h2>
+                    <p>Enhance security to protect your data</p>
+                </div>
+                <div class="pic1">
+                    <img src="https://picsum.photos/300/200" alt="picture">
+                    <h2>Easy Integration</h2>
+                    <p>Seamless integration with your tools</p>
+                </div></div></div><br><hr>
+       <!--Mini project 3  -->
+       <section class="response">
+        <div class="response1">
+            <img src="https://picsum.photos/300/200?random=1" alt="card image">
+            <h2>HTML</h2>
+            <p>HyperText Markup Language used to Create the structure of the webpage</p>
+            <button class="btn2">Know More</button>
+        </div>
+        <div class="response1 featured">
+            <img src="https://picsum.photos/300/200?random=2" alt="card image 2">
+            <h2>CSS</h2>
+            <p>Cascading Style Sheet used to apply styles in html code.</p>
+            <button class="btn2">know more</button>
+        </div>
+        <div class="response1">
+            <img src="https://picsum.photos/300/200?random=3" alt="card image3">
+            <h2>CSS Flex</h2>
+            <p>CSS Flex property used to style the sheet in row wise.</p>
+            <button class="btn2">Know more</button>
+        </div>
+        <div class="response1">
+            <img src="https://picsum.photos/300/200?random=4" alt="card image4">
+            <h2>CSS Grid</h2>
+            <p>CSS Grid property used to style the sheet in column wise.</p>
+            <button class="btn2">Know More</button>
+        </div></section><br><hr>
+        <!-- Mini project 4 -->
+         <div class="pro1">
+            <h1>Our Products</h1>
+            <div class="pro2">
+                <div class="pro3">
+                    <img src="download (1).jpg" alt="Product1">
+                    <h2>Featured Headphones</h2>
+                    <p>High Quality sound with noise cancellation</p>
+                    <p class="pp">&#8377;199</p>
+                </div>
+                <div class="pro3">
+                    <img src="buds.jpg" alt="buds">
+                    <h2>Wireless Earbuds</h2>
+                    <p>Compact abd powerful sound</p>
+                    <p class="pp">&#8377;799</p>
+                </div>
+                <div class="pro3">
+                    <img src="images.jpg" alt="watch">
+                    <h2>Smart Watch</h2>
+                    <p>Track fitness and notification</p>
+                    <p class="pp">&#8377;1999</p>
+                </div></div></div><br><hr>
+                <!-- Mini Project 5 -->
+                <section class="pricing">
+                        <h1>Pricing Plans</h1>
+                <div class="plans">
+                <div class="plan">
+                        <h2>Basic</h2>
+                        <h3>&#8377;499</h3>
+                        <p>HTML & CSS</p>
+                        <p>5 Projects</p>
+                    <button>Choose</button>
+                </div>
+                <div class="plan popular">
+                        <h2>Standard</h2>
+                        <h3>&#8377;999</h3>
+                        <p>HTML + CSS + Flexbox</p>
+                        <p>15 Projects</p>
+                        <button>Choose</button>
+                </div>
+                <div class="plan">
+                        <h2>Premium</h2>
+                        <h3>&#8377;1499</h3>
+                        <p>Complete Frontend</p>
+                        <p>Unlimited Projects</p>
+                        <button>Choose</button>
+                </div></div></section>
+    <!-- Mini project 6 -->
+        <nav>
+            <h2 class="logo">MyWebsite</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav><br><hr>
+        <!-- MIni project 7 -->
+         <section class="contact-section">
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <textarea rows="6" placeholder="Enter Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form></div>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+        <p><strong>📧 Email:</strong> info@example.com</p>
+        <p><strong>📍 Address:</strong> Chennai, Tamil Nadu, India</p>
+        <p>
+            Feel free to contact us for any queries regarding our services.
+            We are available Monday to Saturday from 9:00 AM to 6:00 PM.
+        </p></div></section><br><hr>
+        <!-- Mini project 8 -->
+         <section class="newsletter-section">
+    <div class="newsletter">
+        <div class="content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates, offers and web development tutorials directly in your inbox.</p>
+        </div>
+        <div class="signup">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+    </div></div></section>
+</body>
+</html>

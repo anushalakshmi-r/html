@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.newsletter{
+    width:90%;
+    max-width:700px;
+    background:linear-gradient(135deg,#0077cc,#00b4db);
+    color:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    text-align:center;
+}
+.newsletter h1{
+    margin-bottom:15px;
+    font-size:2rem;
+}
+.newsletter p{
+    margin-bottom:25px;
+    font-size:1rem;
+}
+.subscribe-form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+.subscribe-form input{
+    flex:1;
+    min-width:220px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+.subscribe-form button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:#ffffff;
+    color:#0077cc;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+.subscribe-form button:hover{
+    background:#005fa3;
+    color:white;
+}
+    </style>
+</head>
+<body>
+<section class="newsletter">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>
+        Get the latest updates, tutorials and offers directly to your inbox.
+    </p>
+    <form class="subscribe-form">
+        <input type="email"
+               placeholder="Enter your email"
+               required>
+        <button type="submit">
+            Subscribe
+        </button>
+        </form>
+</section>
+</body>
+</html>

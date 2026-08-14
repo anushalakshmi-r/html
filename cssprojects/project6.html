@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.pricing-container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card{
+    width:280px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    text-align:center;
+    padding:25px;
+    transition:.3s;
+}
+.card:hover{
+    box-shadow:0 12px 25px rgba(0,0,0,.3);
+}
+.popular{
+    border:3px solid royalblue;
+}
+.card h2{
+    margin-bottom:10px;
+}
+.card h3{
+    color:royalblue;
+    margin-bottom:20px;
+}
+.card ul{
+    list-style:none;
+    margin-bottom:20px;
+}
+.card ul li{
+    margin:10px 0;
+}
+button{
+    padding:12px 25px;
+    background:royalblue;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover{
+background:darkblue;
+}
+</style>
+</head>
+<body>
+    <div class="pricing-container">
+    <div class="card">
+        <h2>Basic</h2>
+        <h3>₹499</h3>
+        <ul>
+            <li>✔ 5 Pages</li>
+            <li>✔ Email Support</li>
+            <li>✖ Free Domain</li>
+            <li>✖ Premium Support</li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+    <div class="card popular">
+        <h2>Standard</h2>
+        <h3>₹999</h3>
+        <ul>
+            <li>✔ 10 Pages</li>
+            <li>✔ Free Domain</li>
+            <li>✔ Email Support</li>
+            <li>✔ Premium Support</li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+    <div class="card">
+        <h2>Premium</h2>
+        <h3>₹1999</h3>
+        <ul>
+            <li>✔ Unlimited Pages</li>
+            <li>✔ Free Domain</li>
+            <li>✔ 24/7 Support</li>
+            <li>✔ Lifetime Updates</li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+</body>
+</html>

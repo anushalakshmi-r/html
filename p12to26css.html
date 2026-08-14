@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1::before{
+            content:"*";
+            color: gold;
+        }
+        .completed::after{
+            content:"Done";
+            color: darkgreen;
+            font-weight: bold;
+        }
+        p{
+            line-height: 1.6;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+        }
+        #main-title{
+            color: red;
+            text-align: center;
+        }
+        .bordered{
+            border: 3px solid black;
+            padding: 15px;
+        }
+        input[type="text"]{
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer span{
+            font-size: 14px;
+            color: gray;
+        }
+        section>p{
+            color: darkgreen;
+        }
+        h2~p{
+            font-style: oblique;
+        }
+        input:focus{
+            background-color: yellow;
+        }
+        tr:nth-child(even){
+            background-color: lightblue;
+        }
+        article p::first-letter{
+            font-size: 200% ;
+            text-transform: uppercase;
+            color: brown;
+        }
+        ::selection{
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--Program 12-->
+    <h1>HTML</h1>
+    <h1>CSS</h1><hr>
+    <!--Program 13-->
+    <ul>
+        <li class="completed">HTML</li>
+        <li>CSS</li>
+        <li>Java Script</li>
+    </ul><hr>
+    <!--rogram 14-->
+    <p>This is Monday</p>
+    <p>July 13 2026</p>
+    <hr>
+    <!--program 15-->
+    <div class="box">
+        <p> Selectors</p>
+    </div><hr>
+    <!--Program16-->
+    <h2 id="main-title">Hello</h2><hr>
+    <!--Program 17-->
+    <h3 class="bordered">Border Example</h3><hr>
+    <!--program18-->
+    <label>Enter your name:</label>
+    <input type="text" name="name"><br>
+    <label>Enter your password</label>
+    <input type="text" name="name">
+    <hr>
+    <!--Program19-->
+    <h3>Universal selector</h3>
+    <div style="width:200px;border:2px solid black;padding:20px;">
+            Hello
+    </div><hr>
+    <!--program20-->
+    <footer>
+        <p>Copyrights</p>
+        <span>&copy; Rights reserved to the company</span>
+    </footer><hr>
+    <!--Program21-->
+    <section>
+        <p>My favourite bird is peacock.</p>
+        <p>My favourite color is purple</p>
+    <div>
+        <p>My favourite subject is tamil</p>
+    </div> </section> <hr>
+    <!--program 22-->
+    <h2> General Sibling Selector </h2>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <hr>
+    <!--Program23-->
+    <h2> Focus example</h2><br>
+    <label>Enter your name: </label>
+    <input type="text" name="name">
+    <hr>
+    <!--program24-->
+    <table border="5">
+        <h1>Table Example</h1>
+        <tr><td>Row1</td></tr>
+        <tr><td>Row2</td></tr>
+        <tr><td>Row3</td></tr>
+        <tr><td>Row4</td></tr>
+        <tr><td>Row5</td></tr>
+        <tr><td>Row6</td></tr>
+    </table><hr>
+    <!--program25-->
+    <article>
+        <h3>Days of the weeks</h3>
+        <p>Sunday</p>
+        <p>Monday</p>
+        <p>Tuesday</p>
+        <p>Wednesday</p>
+        <p>Thursday</p>
+        <p>Friday</p>
+        <p>Saturday</p>
+    </article><hr>
+    <!--program 26-->
+    <h2>Select the Text Below</h2>
+    <p>HTML and CSS are the foundation of web development.
+    Select this text to see the selection effect.</p>
+    <hr>
+</body>
+</html>
