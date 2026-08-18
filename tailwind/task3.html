@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tasty Bites Restaurant</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-orange-50">
+
+    <!-- Navbar -->
+    <nav class="bg-red-600 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+            <h1 class="text-2xl md:text-3xl font-bold">
+                Tasty Bites
+            </h1>
+
+            <div class="flex gap-4 md:gap-6">
+                <a href="#home" class="hover:text-yellow-300">Home</a>
+                <a href="#menu" class="hover:text-yellow-300">Menu</a>
+                <a href="#about" class="hover:text-yellow-300">About</a>
+                <a href="#contact" class="hover:text-yellow-300">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Food Menu Section -->
+    <section id="menu" class="max-w-7xl mx-auto px-4 py-10">
+
+        <!-- Heading -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-red-600 mb-10">
+            Our Food Menu
+        </h2>
+
+
+        <!-- Food Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+            <!-- Food Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTegC0T1eZZqs3Yv3eFU8Cd5S797kDGudM_pon648EhpQ&s=10"
+                     alt="Pizza"
+                     class="w-auto h-auto object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Margherita Pizza
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Delicious pizza topped with cheese, tomatoes and fresh herbs.
+                    </p>
+
+                    <p class="text-2xl font-bold text-red-600 mt-4">
+                        ₹299
+                    </p>
+
+                    <button class="w-full bg-red-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Food Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7SFB_M250yF0j4F05G_LLlTIYtJaZAIt6UTzZrYgcKg&s=10"
+                     alt="Burger"
+                     class="w-auto h-auto object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Veggie Burger
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        A tasty burger filled with fresh vegetables and cheese.
+                    </p>
+
+                    <p class="text-2xl font-bold text-red-600 mt-4">
+                        ₹199
+                    </p>
+
+                    <button class="w-full bg-red-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Food Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ms4FyCuwywrEGUlqbC_1WC0QzyN8CxBa-qDXt4xNSw&s=10"
+                     alt="Pasta"
+                     class="w-auto h-auto object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Creamy Pasta
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Creamy pasta cooked with fresh vegetables and herbs.
+                    </p>
+
+                    <p class="text-2xl font-bold text-red-600 mt-4">
+                        ₹249
+                    </p>
+
+                    <button class="w-full bg-red-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Food Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqfLz5UngmrX3P9Rd9S-cWezwhADjuq0m5bcq1T-wjw&s=10"
+                     alt="Sandwich"
+                     class="w-auto h-auto object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Grilled Sandwich
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Crispy grilled sandwich with vegetables and cheese.
+                    </p>
+
+                    <p class="text-2xl font-bold text-red-600 mt-4">
+                        ₹149
+                    </p>
+
+                    <button class="w-full bg-red-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Food Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2YFPcUk4nZ68fQfzXSPmuJso0XOmd137kSsziIBMVA&s=10"
+                     alt="Noodles"
+                     class="w-auto h-auto object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Veg Noodles
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Delicious noodles tossed with fresh vegetables and spices.
+                    </p>
+
+                    <p class="text-2xl font-bold text-red-600 mt-4">
+                        ₹179
+                    </p>
+
+                    <button class="w-full bg-red-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Food Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_GA_DKfYVB5e05xkQKmrxV1VBLUGVihN232IhR5gRPg&s=10"
+                     alt="Ice Cream"
+                     class="w-auto h-auto object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Chocolate Ice Cream
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Creamy chocolate ice cream topped with delicious chocolate sauce.
+                    </p>
+
+                    <p class="text-2xl font-bold text-red-600 mt-4">
+                        ₹129
+                    </p>
+
+                    <button class="w-full bg-red-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

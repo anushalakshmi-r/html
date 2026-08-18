@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold text-blue-600">
+                Anusha
+            </h1>
+
+            <!-- Navigation -->
+            <div class="flex gap-3 md:gap-6 text-sm md:text-base">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#skills" class="hover:text-blue-600">Skills</a>
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home"
+        class="min-h-screen flex items-center bg-gradient-to-r from-blue-600 to-purple-600">
+
+        <div class="max-w-7xl mx-auto px-6 py-16 text-center text-white">
+
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                Hi, I'm Anusha Lakshmi
+            </h1>
+
+            <h2 class="text-xl md:text-2xl lg:text-3xl mb-6">
+                AI Python Full Stack Developer
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-base md:text-lg mb-8">
+                Passionate about web development and building responsive,
+                user-friendly applications using modern technologies.
+            </p>
+
+            <!-- Download CV Button -->
+            <a href="resume.pdf"
+                class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg
+                       font-semibold shadow-lg hover:bg-gray-200 transition">
+                Download CV
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="py-16 px-6">
+
+        <div class="max-w-5xl mx-auto text-center">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
+                About Me
+            </h2>
+
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                I am a Computer Science graduate and aspiring Full Stack
+                Developer. I enjoy creating responsive websites and learning
+                modern technologies. Currently, I am developing my skills in
+                HTML, CSS, Bootstrap, Tailwind CSS, Python and AI technologies.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="bg-white py-16 px-6">
+
+        <div class="max-w-7xl mx-auto">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center
+                       text-blue-600 mb-10">
+                My Skills
+            </h2>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Skill Card 1 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md
+                            hover:shadow-xl transition text-center">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        HTML
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Building structured and semantic web pages.
+                    </p>
+
+                </div>
+
+
+                <!-- Skill Card 2 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md
+                            hover:shadow-xl transition text-center">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        CSS
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Creating responsive and attractive designs.
+                    </p>
+
+                </div>
+
+
+                <!-- Skill Card 3 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md
+                            hover:shadow-xl transition text-center">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Bootstrap
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Developing responsive layouts quickly.
+                    </p>
+
+                </div>
+
+
+                <!-- Skill Card 4 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md
+                            hover:shadow-xl transition text-center">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Tailwind CSS
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Building modern UI using utility classes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="py-16 px-6">
+
+        <div class="max-w-7xl mx-auto">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center
+                       text-blue-600 mb-10">
+                My Projects
+            </h2>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                <!-- Project 1 -->
+                <div class="bg-white border border-gray-200 rounded-xl
+                            shadow-md overflow-hidden hover:shadow-xl transition">
+
+                    <img src="https://via.placeholder.com/500x300"
+                         alt="Portfolio Project"
+                         class="w-full h-48 object-cover">
+
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-bold">
+                            Personal Portfolio
+                        </h3>
+
+                        <p class="text-gray-600 mt-3">
+                            A responsive personal portfolio website created
+                            using HTML, CSS and Tailwind CSS.
+                        </p>
+
+                        <button class="mt-5 bg-blue-600 text-white px-4 py-2
+                                       rounded-lg hover:bg-blue-700 transition">
+                            View Project
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="bg-white border border-gray-200 rounded-xl
+                            shadow-md overflow-hidden hover:shadow-xl transition">
+
+                    <img src="https://via.placeholder.com/500x300"
+                         alt="Food Menu Project"
+                         class="w-full h-48 object-cover">
+
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-bold">
+                            Food Menu Website
+                        </h3>
+
+                        <p class="text-gray-600 mt-3">
+                            A responsive restaurant food menu page with
+                            attractive cards and responsive grid layout.
+                        </p>
+
+                        <button class="mt-5 bg-blue-600 text-white px-4 py-2
+                                       rounded-lg hover:bg-blue-700 transition">
+                            View Project
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="bg-white border border-gray-200 rounded-xl
+                            shadow-md overflow-hidden hover:shadow-xl transition">
+
+                    <img src="https://via.placeholder.com/500x300"
+                         alt="Shopping Project"
+                         class="w-full h-48 object-cover">
+
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-bold">
+                            Shopping Website
+                        </h3>
+
+                        <p class="text-gray-600 mt-3">
+                            A responsive product shopping page created using
+                            Tailwind CSS and responsive grid utilities.
+                        </p>
+
+                        <button class="mt-5 bg-blue-600 text-white px-4 py-2
+                                       rounded-lg hover:bg-blue-700 transition">
+                            View Project
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="bg-blue-600 py-16 px-6 text-white">
+
+        <div class="max-w-3xl mx-auto text-center">
+
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Contact Me
+            </h2>
+
+            <p class="text-lg mb-6">
+                Have a project or opportunity? Feel free to contact me!
+            </p>
+
+            <form class="bg-white p-6 rounded-xl shadow-lg text-gray-800">
+
+                <input type="text"
+                       placeholder="Your Name"
+                       class="w-full border border-gray-300 rounded-lg
+                              px-4 py-3 mb-4 focus:outline-none
+                              focus:ring-2 focus:ring-blue-500">
+
+                <input type="email"
+                       placeholder="Your Email"
+                       class="w-full border border-gray-300 rounded-lg
+                              px-4 py-3 mb-4 focus:outline-none
+                              focus:ring-2 focus:ring-blue-500">
+
+                <textarea placeholder="Your Message"
+                          rows="5"
+                          class="w-full border border-gray-300 rounded-lg
+                                 px-4 py-3 mb-4 focus:outline-none
+                                 focus:ring-2 focus:ring-blue-500"></textarea>
+
+                <button type="submit"
+                        class="w-full bg-blue-600 text-white py-3
+                               rounded-lg font-semibold
+                               hover:bg-blue-700 transition">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white text-center py-5">
+
+        <p>
+            © 2026 Anusha Lakshmi | Personal Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>

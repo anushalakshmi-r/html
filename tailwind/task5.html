@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub - Online Courses</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 
+                    flex justify-between items-center">
+
+            <!-- Logo -->
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600">
+                LearnHub
+            </h1>
+
+            <!-- Navigation Links -->
+            <div class="flex gap-3 sm:gap-5 md:gap-7 text-sm sm:text-base">
+                <a href="#home" class="hover:text-blue-600 transition">
+                    Home
+                </a>
+
+                <a href="#courses" class="hover:text-blue-600 transition">
+                    Courses
+                </a>
+
+                <a href="#trainers" class="hover:text-blue-600 transition">
+                    Trainers
+                </a>
+
+                <a href="#contact" class="hover:text-blue-600 transition">
+                    Contact
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home"
+             class="bg-gradient-to-r from-blue-600 to-indigo-700 
+                    text-white py-20 sm:py-24 lg:py-32">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 
+                    text-center">
+
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl 
+                       font-bold mb-6">
+                Learn Full Stack Development
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-base sm:text-lg 
+                      lg:text-xl mb-8 text-blue-100">
+                Build modern and responsive websites by learning
+                HTML, CSS, JavaScript, Bootstrap, Tailwind CSS,
+                Python, and Full Stack Development.
+            </p>
+
+            <a href="#courses"
+               class="inline-block bg-white text-blue-600 
+                      px-6 py-3 sm:px-8 sm:py-4
+                      rounded-lg font-semibold shadow-lg
+                      hover:bg-gray-200 hover:scale-105
+                      transition duration-300">
+                Enroll Now
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- ================= COURSES SECTION ================= -->
+    <section id="courses"
+             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+                    py-16 sm:py-20">
+
+        <h2 class="text-3xl sm:text-4xl font-bold 
+                   text-center text-blue-600 mb-10">
+            Our Courses
+        </h2>
+
+
+        <!-- Course Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+            <!-- Course 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md
+                        hover:shadow-xl hover:-translate-y-2
+                        transition duration-300">
+
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                    Frontend Development
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Learn HTML, CSS, JavaScript, Bootstrap and Tailwind CSS.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-2">
+                    Duration: 3 Months
+                </p>
+
+                <p class="text-2xl font-bold text-blue-600 mb-5">
+                    ₹9,999
+                </p>
+
+                <button class="w-full bg-blue-600 text-white
+                               py-2 rounded-lg
+                               hover:bg-blue-700 hover:scale-105
+                               transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Course 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md
+                        hover:shadow-xl hover:-translate-y-2
+                        transition duration-300">
+
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                    Python Programming
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Learn Python programming from basics to advanced concepts.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-2">
+                    Duration: 2 Months
+                </p>
+
+                <p class="text-2xl font-bold text-blue-600 mb-5">
+                    ₹7,999
+                </p>
+
+                <button class="w-full bg-blue-600 text-white
+                               py-2 rounded-lg
+                               hover:bg-blue-700 hover:scale-105
+                               transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Course 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md
+                        hover:shadow-xl hover:-translate-y-2
+                        transition duration-300">
+
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                    Full Stack Development
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Become a complete developer by learning frontend and backend.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-2">
+                    Duration: 6 Months
+                </p>
+
+                <p class="text-2xl font-bold text-blue-600 mb-5">
+                    ₹19,999
+                </p>
+
+                <button class="w-full bg-blue-600 text-white
+                               py-2 rounded-lg
+                               hover:bg-blue-700 hover:scale-105
+                               transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Course 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md
+                        hover:shadow-xl hover:-translate-y-2
+                        transition duration-300">
+
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                    Data Science & AI
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Explore Data Science, Machine Learning and AI concepts.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-2">
+                    Duration: 4 Months
+                </p>
+
+                <p class="text-2xl font-bold text-blue-600 mb-5">
+                    ₹14,999
+                </p>
+
+                <button class="w-full bg-blue-600 text-white
+                               py-2 rounded-lg
+                               hover:bg-blue-700 hover:scale-105
+                               transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US SECTION ================= -->
+    <section id="trainers"
+             class="bg-blue-600 text-white py-16 sm:py-20">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <h2 class="text-3xl sm:text-4xl font-bold 
+                       text-center mb-10">
+                Why Choose Us?
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Feature 1 -->
+                <div class="bg-white text-gray-800 p-6 rounded-xl
+                            shadow-lg text-center
+                            hover:scale-105 transition">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Expert Trainers
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Learn from experienced professionals and industry experts.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+                <div class="bg-white text-gray-800 p-6 rounded-xl
+                            shadow-lg text-center
+                            hover:scale-105 transition">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Practical Learning
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Build real-world projects and improve your practical skills.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+                <div class="bg-white text-gray-800 p-6 rounded-xl
+                            shadow-lg text-center
+                            hover:scale-105 transition">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Career Support
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Get guidance to prepare for interviews and career opportunities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact"
+             class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-3xl mx-auto text-center">
+
+            <h2 class="text-3xl sm:text-4xl font-bold
+                       text-blue-600 mb-5">
+                Contact Us
+            </h2>
+
+            <p class="text-gray-600 mb-8">
+                Have questions about our courses? Get in touch with us!
+            </p>
+
+            <button class="bg-blue-600 text-white px-6 py-3
+                           rounded-lg shadow-md
+                           hover:bg-blue-700 hover:scale-105
+                           transition duration-300">
+                Contact Now
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white text-center
+                   py-6 px-4">
+
+        <p class="text-sm sm:text-base">
+            © 2026 LearnHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
