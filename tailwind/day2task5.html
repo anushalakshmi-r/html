@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+
+    <!-- ================= Mobile Header ================= -->
+    <!-- Visible on Mobile -->
+    <!-- Hidden from lg onwards -->
+
+    <header class="block lg:hidden bg-blue-600 text-white p-4">
+
+        <div class="flex items-center justify-between">
+
+            <h1 class="text-xl font-bold">
+                Admin Panel
+            </h1>
+
+            <button class="text-2xl">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= Sidebar ================= -->
+    <!-- Hidden on Mobile -->
+    <!-- Visible from lg onwards -->
+
+    <aside class="hidden lg:block fixed left-0 top-0
+                  w-64 h-screen bg-gray-900 text-white p-6">
+
+        <h1 class="text-2xl font-bold mb-10">
+            Admin Panel
+        </h1>
+
+
+        <nav class="flex flex-col gap-5">
+
+            <a href="#"
+                class="hover:bg-gray-700 p-3 rounded-lg transition">
+
+                Dashboard
+
+            </a>
+
+
+            <a href="#students"
+                class="hover:bg-gray-700 p-3 rounded-lg transition">
+
+                Students
+
+            </a>
+
+
+            <a href="#courses"
+                class="hover:bg-gray-700 p-3 rounded-lg transition">
+
+                Courses
+
+            </a>
+
+
+            <a href="#trainers"
+                class="hover:bg-gray-700 p-3 rounded-lg transition">
+
+                Trainers
+
+            </a>
+
+
+            <a href="#projects"
+                class="hover:bg-gray-700 p-3 rounded-lg transition">
+
+                Projects
+
+            </a>
+
+
+            <a href="#"
+                class="hover:bg-red-600 p-3 rounded-lg transition">
+
+                Logout
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ================= Main Content ================= -->
+
+    <!-- lg:ml-64 gives space for sidebar on desktop -->
+
+    <main class="lg:ml-64 p-4 md:p-6 lg:p-8">
+
+
+        <!-- Dashboard Heading -->
+
+        <div class="flex flex-col md:flex-row
+                    md:items-center md:justify-between
+                    gap-4 mb-8">
+
+            <div>
+
+                <h2 class="text-2xl md:text-3xl lg:text-4xl
+                           font-bold">
+
+                    Dashboard
+
+                </h2>
+
+                <p class="text-gray-500 mt-2">
+
+                    Welcome back! Here is your dashboard overview.
+
+                </p>
+
+            </div>
+
+
+            <button class="bg-blue-600 text-white
+                           px-5 py-3 rounded-lg
+                           hover:bg-blue-700
+                           transition">
+
+                + Add New
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= Dashboard Cards ================= -->
+
+        <section
+            class="grid grid-cols-1
+                   md:grid-cols-2
+                   lg:grid-cols-4
+                   gap-4 md:gap-6 mb-8">
+
+
+            <!-- Card 1 -->
+
+            <div
+                class="bg-white p-6 rounded-xl shadow-md
+                       hover:shadow-xl hover:-translate-y-1
+                       transition">
+
+                <p class="text-gray-500">
+                    Total Students
+                </p>
+
+                <h3 class="text-3xl font-bold mt-3">
+                    1,250
+                </h3>
+
+                <p class="text-green-600 mt-2">
+                    +12% this month
+                </p>
+
+            </div>
+
+
+
+            <!-- Card 2 -->
+
+            <div
+                class="bg-white p-6 rounded-xl shadow-md
+                       hover:shadow-xl hover:-translate-y-1
+                       transition">
+
+                <p class="text-gray-500">
+                    Total Courses
+                </p>
+
+                <h3 class="text-3xl font-bold mt-3">
+                    48
+                </h3>
+
+                <p class="text-blue-600 mt-2">
+                    +5 new courses
+                </p>
+
+            </div>
+
+
+
+            <!-- Card 3 -->
+
+            <div
+                class="bg-white p-6 rounded-xl shadow-md
+                       hover:shadow-xl hover:-translate-y-1
+                       transition">
+
+                <p class="text-gray-500">
+                    Total Trainers
+                </p>
+
+                <h3 class="text-3xl font-bold mt-3">
+                    24
+                </h3>
+
+                <p class="text-purple-600 mt-2">
+                    Active trainers
+                </p>
+
+            </div>
+
+
+
+            <!-- Card 4 -->
+
+            <div
+                class="bg-white p-6 rounded-xl shadow-md
+                       hover:shadow-xl hover:-translate-y-1
+                       transition">
+
+                <p class="text-gray-500">
+                    Completed Projects
+                </p>
+
+                <h3 class="text-3xl font-bold mt-3">
+                    96
+                </h3>
+
+                <p class="text-orange-600 mt-2">
+                    +8 this month
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= Recent Activity ================= -->
+
+        <section class="bg-white rounded-xl shadow-md p-4 md:p-6">
+
+            <div class="flex items-center justify-between mb-6">
+
+                <h2 class="text-xl md:text-2xl font-bold">
+                    Recent Activity
+                </h2>
+
+                <button class="text-blue-600 hover:text-blue-800">
+
+                    View All
+
+                </button>
+
+            </div>
+
+
+            <!-- Responsive Table -->
+
+            <div class="overflow-x-auto">
+
+                <table class="w-full min-w-[600px]">
+
+                    <thead class="bg-gray-100">
+
+                        <tr>
+
+                            <th class="text-left p-3">
+                                Name
+                            </th>
+
+                            <th class="text-left p-3">
+                                Activity
+                            </th>
+
+                            <th class="text-left p-3">
+                                Date
+                            </th>
+
+                            <th class="text-left p-3">
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr class="border-b">
+
+                            <td class="p-3">
+                                Anitha
+                            </td>
+
+                            <td class="p-3">
+                                Enrolled in Full Stack Course
+                            </td>
+
+                            <td class="p-3">
+                                Today
+                            </td>
+
+                            <td class="p-3">
+
+                                <span
+                                    class="bg-green-100 text-green-700
+                                           px-3 py-1 rounded-full
+                                           text-sm">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="border-b">
+
+                            <td class="p-3">
+                                Rahul
+                            </td>
+
+                            <td class="p-3">
+                                Submitted a Project
+                            </td>
+
+                            <td class="p-3">
+                                Yesterday
+                            </td>
+
+                            <td class="p-3">
+
+                                <span
+                                    class="bg-blue-100 text-blue-700
+                                           px-3 py-1 rounded-full
+                                           text-sm">
+
+                                    In Progress
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="border-b">
+
+                            <td class="p-3">
+                                Priya
+                            </td>
+
+                            <td class="p-3">
+                                Completed Data Science Course
+                            </td>
+
+                            <td class="p-3">
+                                2 Days Ago
+                            </td>
+
+                            <td class="p-3">
+
+                                <span
+                                    class="bg-green-100 text-green-700
+                                           px-3 py-1 rounded-full
+                                           text-sm">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="p-3">
+                                Karthik
+                            </td>
+
+                            <td class="p-3">
+                                Started New Project
+                            </td>
+
+                            <td class="p-3">
+                                3 Days Ago
+                            </td>
+
+                            <td class="p-3">
+
+                                <span
+                                    class="bg-yellow-100 text-yellow-700
+                                           px-3 py-1 rounded-full
+                                           text-sm">
+
+                                    Pending
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

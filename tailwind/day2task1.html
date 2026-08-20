@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Menu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-orange-500 p-4">
+
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row 
+                    items-center justify-between gap-4">
+
+            <!-- Restaurant Logo -->
+            <h2 class="text-white text-2xl font-bold">
+                Foodie's Hub
+            </h2>
+
+            <!-- Navigation Links -->
+            <div class="flex flex-col sm:flex-row 
+                        items-center gap-3 sm:gap-6">
+
+                <a href="#" class="text-white hover:text-yellow-200">
+                    Home
+                </a>
+
+                <a href="#" class="text-white hover:text-yellow-200">
+                    Menu
+                </a>
+
+                <a href="#" class="text-white hover:text-yellow-200">
+                    About
+                </a>
+
+                <a href="#" class="text-white hover:text-yellow-200">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Heading Section -->
+    <section class="text-center py-10 px-4">
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl 
+                   lg:text-6xl font-bold text-gray-800">
+
+            Our Delicious Menu
+
+        </h1>
+
+        <p class="text-gray-600 mt-4 text-base sm:text-lg">
+
+            Enjoy our freshly prepared and delicious dishes!
+
+        </p>
+
+    </section>
+
+
+    <!-- Food Cards -->
+    <section class="max-w-7xl mx-auto px-4 pb-10">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 
+                    lg:grid-cols-3 gap-6">
+
+
+            <!-- Food Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg 
+                        overflow-hidden hover:shadow-2xl 
+                        transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+                    alt="Burger"
+                    class="w-full h-48 object-cover"
+                >
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold text-gray-800">
+                        Classic Burger
+                    </h2>
+
+                    <p class="text-orange-500 font-bold mt-2">
+                        ₹199
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        A delicious burger with fresh vegetables,
+                        cheese, and a juicy patty.
+                    </p>
+
+                    <button class="mt-4 bg-orange-500 text-white 
+                                   px-5 py-2 rounded-lg 
+                                   hover:bg-orange-600 
+                                   hover:scale-105 
+                                   transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg 
+                        overflow-hidden hover:shadow-2xl 
+                        transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+                    alt="Pizza"
+                    class="w-full h-48 object-cover"
+                >
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold text-gray-800">
+                        Cheese Pizza
+                    </h2>
+
+                    <p class="text-orange-500 font-bold mt-2">
+                        ₹299
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        Freshly baked pizza loaded with cheese
+                        and delicious toppings.
+                    </p>
+
+                    <button class="mt-4 bg-orange-500 text-white 
+                                   px-5 py-2 rounded-lg 
+                                   hover:bg-orange-600 
+                                   hover:scale-105 
+                                   transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg 
+                        overflow-hidden hover:shadow-2xl 
+                        transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+                    alt="Pasta"
+                    class="w-full h-48 object-cover"
+                >
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold text-gray-800">
+                        Creamy Pasta
+                    </h2>
+
+                    <p class="text-orange-500 font-bold mt-2">
+                        ₹249
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        Creamy and flavorful pasta prepared
+                        with fresh ingredients.
+                    </p>
+
+                    <button class="mt-4 bg-orange-500 text-white 
+                                   px-5 py-2 rounded-lg 
+                                   hover:bg-orange-600 
+                                   hover:scale-105 
+                                   transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg 
+                        overflow-hidden hover:shadow-2xl 
+                        transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554"
+                    alt="Noodles"
+                    class="w-full h-48 object-cover"
+                >
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold text-gray-800">
+                        Veg Noodles
+                    </h2>
+
+                    <p class="text-orange-500 font-bold mt-2">
+                        ₹179
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        Tasty noodles cooked with fresh
+                        vegetables and flavorful spices.
+                    </p>
+
+                    <button class="mt-4 bg-orange-500 text-white 
+                                   px-5 py-2 rounded-lg 
+                                   hover:bg-orange-600 
+                                   hover:scale-105 
+                                   transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg 
+                        overflow-hidden hover:shadow-2xl 
+                        transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8"
+                    alt="Paneer Curry"
+                    class="w-full h-48 object-cover"
+                >
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold text-gray-800">
+                        Paneer Butter Masala
+                    </h2>
+
+                    <p class="text-orange-500 font-bold mt-2">
+                        ₹269
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        Soft paneer cooked in a rich and
+                        creamy tomato-based gravy.
+                    </p>
+
+                    <button class="mt-4 bg-orange-500 text-white 
+                                   px-5 py-2 rounded-lg 
+                                   hover:bg-orange-600 
+                                   hover:scale-105 
+                                   transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg 
+                        overflow-hidden hover:shadow-2xl 
+                        transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+                    alt="Dessert"
+                    class="w-full h-48 object-cover"
+                >
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold text-gray-800">
+                        Chocolate Dessert
+                    </h2>
+
+                    <p class="text-orange-500 font-bold mt-2">
+                        ₹149
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        A rich and delicious chocolate dessert
+                        perfect for sweet lovers.
+                    </p>
+
+                    <button class="mt-4 bg-orange-500 text-white 
+                                   px-5 py-2 rounded-lg 
+                                   hover:bg-orange-600 
+                                   hover:scale-105 
+                                   transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
